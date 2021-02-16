@@ -1,11 +1,5 @@
 FROM openjdk:8-jdk
-WORKDIR /usr/local/truelook
-#COPY --from=builder /root/.m2/repository/com/truelook/truelook/0.0.1-SNAPSHOT/truelook-0.0.1-SNAPSHOT.jar /usr/local/truelook/app.jar
-#RUN apt-get update
-#RUN apt-get install -y ffmpeg
 RUN apt-get update
-#RUN apt-get install -y build-essential curl file git
-
 RUN apt-get install -y unzip build-essential cmake python-dev python-numpy
 RUN apt-get install -y zlib1g-dev libjpeg-dev libwebp-dev libpng-dev libtiff5-dev libopenexr-dev libgdal-dev
 RUN apt-get install -y libtbb-dev libeigen3-dev
